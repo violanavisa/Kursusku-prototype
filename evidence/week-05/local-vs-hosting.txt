@@ -1,0 +1,12 @@
+LOCAL VS HOSTING
+
+Aspek           | Local Development          | Hosting/Production
+----------------|-----------------------------|---------------------------
+URL             | localhost / .test          | Domain publik
+Lokasi file     | Laptop mahasiswa           | Server hosting
+Database        | MySQL lokal Laragon        | Database server hosting
+Environment     | Development                | Production
+HTTPS/SSL       | Tidak selalu tersedia      | Seharusnya aktif
+Debug           | Boleh ditampilkan          | Jangan tampilkan detail error
+Secret          | Disimpan lokal             | Disimpan aman di server
+Document root   | Folder proyek di Laragon   | Folder ditentukan provider

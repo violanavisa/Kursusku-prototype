@@ -1,0 +1,14 @@
+TEST MATRIX - PERTEMUAN 5
+
+1. Load form registration.php -> Lulus, tampil tanpa error
+2. Submit form kosong -> Lulus, browser menahan field wajib
+3. Email diisi "abc" -> Lulus, browser minta format email benar
+4. Nama diisi 2 huruf -> Lulus, minlength mencegah submit
+5. Method diubah ke GET -> Lulus, data terlihat di URL
+6. Method dikembalikan ke POST -> Lulus, data tidak tampil di URL
+7. Pilih radio Mahasiswa/Umum -> Lulus, muncul di hasil
+8. Centang 2 checkbox minat -> Lulus, tergabung jadi satu teks
+9. Isi catatan singkat -> Lulus, tampil dengan aman di hasil
+10. Submit form -> Lulus, "source: week-05" ikut terkirim
+11. Uji tampilan mobile (360px) -> Lulus, form jadi 1 kolom, tidak overflow
+12. Klik navigasi Beranda -> Katalog -> Daftar -> Lulus, semua menuju halaman benar

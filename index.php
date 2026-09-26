@@ -60,6 +60,7 @@ $year = date('Y');
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= htmlspecialchars($siteName) ?></title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header>
@@ -69,6 +70,7 @@ $year = date('Y');
     <a href="#katalog">Katalog</a>
     <a href="#alur">Cara Daftar</a>
     <a href="#kontak">Kontak</a>
+    <a href="registration.php">DaftarKursus</a>
   </nav>
 </header>
 <main>
