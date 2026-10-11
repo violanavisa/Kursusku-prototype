@@ -7,7 +7,9 @@
   --muted: #60756e;
   --line: #d9e6e2;
 }
+
 * { box-sizing: border-box; }
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -15,15 +17,19 @@ body {
   background: #f6f9f8;
   line-height: 1.6;
 }
+
 .container {
   width: min(1080px, 92%);
   margin-inline: auto;
 }
+
 a { color: var(--brand-dark); }
+
 .site-header {
   background: var(--surface);
   border-bottom: 1px solid var(--line);
 }
+
 .nav-wrap {
   min-height: 64px;
   display: flex;
@@ -31,20 +37,24 @@ a { color: var(--brand-dark); }
   justify-content: space-between;
   gap: 1rem;
 }
+
 nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
+
 .brand {
   font-weight: 800;
   text-decoration: none;
   color: var(--brand-dark);
 }
+
 .page-intro {
   max-width: 720px;
   margin: 2.5rem auto 1.25rem;
 }
+
 .eyebrow {
   color: var(--brand);
   font-weight: 700;
@@ -61,24 +71,29 @@ nav {
   border: 1px solid var(--line);
   border-radius: 1rem;
 }
+
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
+
 .form-group { margin-bottom: 1rem; }
+
 label,
 legend {
   display: block;
   font-weight: 700;
   margin-bottom: .35rem;
 }
+
 input,
 select,
 textarea,
 button {
   font: inherit;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -90,12 +105,14 @@ textarea {
   border-radius: .65rem;
   background: #fff;
 }
+
 input:focus,
 select:focus,
 textarea:focus {
   outline: 3px solid rgba(15, 118, 110, .18);
   border-color: var(--brand);
 }
+
 .choice {
   display: inline-flex;
   align-items: center;
@@ -103,7 +120,9 @@ textarea:focus {
   margin-right: 1rem;
   font-weight: 400;
 }
+
 .help { color: var(--muted); }
+
 .btn-primary,
 .btn-link {
   display: inline-block;
@@ -115,6 +134,7 @@ textarea:focus {
   text-decoration: none;
   cursor: pointer;
 }
+
 .alert-success {
   max-width: 760px;
   margin: 2rem auto 1rem;
@@ -122,13 +142,16 @@ textarea:focus {
   background: #eaf8f1;
   border-left: 4px solid #17824f;
 }
+
 .summary-list {
   display: grid;
   grid-template-columns: 150px 1fr;
   gap: .65rem 1rem;
 }
+
 .summary-list dt { font-weight: 700; }
 .summary-list dd { margin: 0; }
+
 @media (max-width: 640px) {
   .nav-wrap { align-items: flex-start; padding-block: .8rem; }
   nav { gap: .65rem; }
@@ -136,4 +159,58 @@ textarea:focus {
   .form-card,
   .summary-card { padding: 1rem; }
   .summary-list { grid-template-columns: 1fr; }
+}
+
+/* Styling Utama: Nuansa Biru Lembut & Floral Aesthetic */
+body {
+    background-color: #f0f4f8; /* Biru muda sangat soft sebagai latar belakang */
+    background-image: radial-gradient(#d9e2ec 1px, transparent 1px); /* Memberikan tekstur titik-titik lembut */
+    background-size: 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #102a43;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Kontainer Utama Form / Ringkasan */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(16, 42, 67, 0.1);
+    border-top: 5px solid #3182ce; /* Aksen garis biru di atas */
+    position: relative;
+}
+
+/* Sentuhan Estetika Bunga (Aksen Dekoratif Floral) */
+.container::before {
+    content: "🌸 🌿 🌸"; /* Simbol bunga dan daun penghias */
+    display: block;
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+/* Judul dan Teks */
+h1, h2 {
+    color: #2b6cb0; /* Warna biru elegan untuk heading */
+}
+
+/* Tombol Aksi */
+button[type="submit"], a {
+    background-color: #3182ce;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover, a:hover {
+    background-color: #2b6cb0;
 }
