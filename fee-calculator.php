@@ -18,9 +18,10 @@ $total = $subtotal - $discount + $adminFee;
   <title>Kalkulator Biaya - KursusKu</title>
 </head>
 <body>
-  <h1>Kalkulator Estimasi Biaya KursusKu</h1>
-  <p>Kursus: <?= $courseName ?></p>
-  <table border="1" cellpadding="8">
+<h1>Kalkulator Estimasi Biaya KursusKu</h1>
+  <p>Kursus: <strong><?= $courseName ?></strong></p>
+
+  <table>
     <tr><th>Komponen</th><th>Nilai</th></tr>
     <tr><td>Biaya per peserta</td><td>Rp <?= number_format($fee, 0, ',', '.') ?></td></tr>
     <tr><td>Jumlah peserta</td><td><?= $participantCount ?></td></tr>
@@ -30,5 +31,6 @@ $total = $subtotal - $discount + $adminFee;
     <tr><th>Total akhir</th><th>Rp <?= number_format($total, 0, ',', '.') ?></th></tr>
   </table>
   <p><a href="index.php">Kembali ke Beranda KursusKu</a></p>
+</main>
 </body>
 </html>

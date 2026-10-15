@@ -1,5 +1,41 @@
 <?php
 require_once __DIR__ . '/helpers.php';
+
+if (!function_exists('rupiah')) {
+  function rupiah($angka) {
+    return 'Rp' . number_format((float)$angka, 0, ' , ', ' , ');
+  }
+}
+
+if(!function_exists('formatTanggal')) {
+  function formatTanggal($tanggal) {
+    $bulan = [
+      1 => 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 
+      'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+    ];
+    $t = strtotime($tanggal);
+    return date('j', $t) . ' ' . $bulan[(int)date('n', $t)] . ' ' . date('Y', $t);
+  }
+}
+
+if (!function_exists('sisaKursi')) {
+  function sisaKursi($quota, $registered) {
+    return max(0,$quota - $registered);
+  }
+}
+
+if (!function_exists('statusKursus')) {
+    function statusKursus($quota, $registered) {
+        $sisa = $quota - $registered;
+        if ($sisa <= 0) {
+            return 'Penuh';
+        } elseif ($sisa <= 5) {
+            return 'Hampir Penuh';
+        }
+        return 'Tersedia';
+    }
+}
+
 $courses = [
     [
         'code' => 'WEB-01',
