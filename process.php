@@ -46,6 +46,7 @@ if (!in_array($packageCount, [1, 2, 3], true)) {
 }
 
 if ($errors !== []) {
+     http_response_code(422);
     ?>
     <!doctype html>
     <html lang="id">

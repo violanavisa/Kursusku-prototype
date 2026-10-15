@@ -24,7 +24,7 @@
       <p>Lengkapi form berikut dengan data latihan.</p>
     </section>
     <section class="form-card">
-      <form action="process-registration.php" method="POST" class="registration-form">
+      <form class="form-card" method="GET" action="process-registration.php">
   <input type="hidden" name="source" value="week-05">
 
   <div class="form-grid">
